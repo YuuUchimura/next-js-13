@@ -1,8 +1,7 @@
 "use client";
-
 import { useState } from "react";
 
-const Counter = () => {
+const Counter = ({ children }: { children: React.ReactNode }) => {
   const [count, setCount] = useState<number>(0);
   const increment = () => {
     setCount((prev) => prev + 1);
@@ -16,6 +15,7 @@ const Counter = () => {
       >
         Increment
       </button>
+      {children}
     </>
   );
 };
