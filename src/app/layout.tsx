@@ -17,9 +17,6 @@ export default function RootLayout({
   team: React.ReactNode;
   analytics: React.ReactNode;
 }) {
-  console.log(team);
-  console.log(analytics);
-
   return (
     <html lang="en">
       <body className={inter.className}>
