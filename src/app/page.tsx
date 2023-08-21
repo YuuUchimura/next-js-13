@@ -8,6 +8,10 @@ export default function Home() {
       <Link href="/about" className="underline">
         About
       </Link>
+      <br />
+      <Link href="/post" className="underline">
+        Post
+      </Link>
       <h1 className="text-2xl">Home</h1>
       <Counter>
         <h2 className="font-bold text-lg mt-4">ユーザ一覧</h2>
