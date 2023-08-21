@@ -7,6 +7,9 @@ const Page = () => {
         User
       </Link>
       <h1 className="text-2xl">About</h1>
+      <Link href="/" className="underline">
+        TOP
+      </Link>
     </div>
   );
 };
