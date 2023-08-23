@@ -1,4 +1,6 @@
-type User = {
+import Link from "next/link";
+
+export type User = {
   id: string;
   name: string;
   email: string;
@@ -15,7 +17,9 @@ const UserList = async () => {
   return (
     <ul>
       {users.map((user) => (
-        <li key={user.id}>{user.name}</li>
+        <li key={user.id}>
+          <Link href={`/users/${user.id}`}>{user.name}</Link>
+        </li>
       ))}
     </ul>
   );
